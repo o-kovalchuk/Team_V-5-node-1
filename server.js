@@ -5,11 +5,11 @@ const getDateUTC = require('./date');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const argv = minimist(process.argv);
+const argv = minimist(process.argv.slice(2));
 const INTERVAL = argv['i'];
 const TIMEOUT = argv['t'];
 
-const myLogger = (req, res, next) => {
+const consoleLogger = (req, res, next) => {
     const intervalHandler = setInterval(() => {
         console.log(getDateUTC());
     }, INTERVAL);
@@ -21,9 +21,9 @@ const myLogger = (req, res, next) => {
     next();
 };
 
-app.use(myLogger);
+app.use(consoleLogger);
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
     setTimeout(() => {
         res.send(getDateUTC());
     }, TIMEOUT);
