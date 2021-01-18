@@ -1,0 +1,15 @@
+{
+  "name": "team_v-5-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronkrot/Team_V-5-node.git"
+  },
+  "author": "Team_V-5",
+  "license": "ISC"
+}
