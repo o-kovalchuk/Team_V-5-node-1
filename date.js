@@ -1,4 +1,6 @@
 const timeFormat = new Intl.DateTimeFormat('ru', {
+    hour12: false,
+    timeZone: 'UTC',
     day: 'numeric',
     month: 'numeric',
     year: 'numeric',
