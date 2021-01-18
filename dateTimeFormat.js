@@ -1,4 +1,4 @@
-const timeFormat = new Intl.DateTimeFormat('ru', {
+const dateTimeFormat = new Intl.DateTimeFormat('ru', {
     hour12: false,
     timeZone: 'UTC',
     day: 'numeric',
@@ -10,7 +10,7 @@ const timeFormat = new Intl.DateTimeFormat('ru', {
 });
 
 const getDateUTC = () => {
-    return timeFormat.format(new Date());
+    return dateTimeFormat.format(new Date());
 }
 
 module.exports = getDateUTC;

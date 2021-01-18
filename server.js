@@ -1,6 +1,6 @@
 const express = require('express');
 const minimist = require('minimist');
-const getDateUTC = require('./date');
+const getDateUTC = require('./dateTimeFormat');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
