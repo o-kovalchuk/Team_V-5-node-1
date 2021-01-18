@@ -5,10 +5,7 @@ const getDateUTC = require('./date');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-console.log(process.argv);
 const argv = minimist(process.argv);
-console.log('----------');
-console.log(argv);
 const INTERVAL = argv['i'];
 const TIMEOUT = argv['t'];
 

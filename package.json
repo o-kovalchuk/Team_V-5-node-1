@@ -2,10 +2,10 @@
   "name": "team_v-5-node",
   "version": "1.0.0",
   "description": "node.js task",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
