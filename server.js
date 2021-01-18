@@ -6,8 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const argv = minimist(process.argv.slice(2));
-const INTERVAL = argv['i'];
-const TIMEOUT = argv['t'];
+const INTERVAL = argv['i'] ? argv['i'] : 500;
+const TIMEOUT = argv['t'] ? argv['t'] : 2500;
 
 const consoleLogger = (req, res, next) => {
     const intervalHandler = setInterval(() => {
